@@ -43,8 +43,11 @@ class NotesView extends StatelessWidget {
                       color: Colors.white.withOpacity(0.06),
                       borderRadius: BorderRadius.circular(16.0)
                     ),
-                    child: const Center(
-                      child: Icon(Icons.search,size: 28.0),
+                    child: Center(
+                      child: IconButton(
+                          onPressed: () {},
+                          icon: const Icon(Icons.search,size: 28.0)
+                      ),
                     ),
                   )
                 ],
