@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/custom_text_field.dart';
+
 class EditNoteView extends StatelessWidget {
   const EditNoteView({Key? key}) : super(key: key);
 
@@ -18,7 +20,7 @@ class EditNoteView extends StatelessWidget {
               Row(
                 children: [
                   const Text(
-                    "Notes",
+                    "Edit Note",
                     style: TextStyle(
                         fontSize: 28.0
                     ),
@@ -32,12 +34,20 @@ class EditNoteView extends StatelessWidget {
                         borderRadius: BorderRadius.circular(16.0)
                     ),
                     child: const Center(
-                      child: Icon(Icons.search,size: 28.0),
+                      child: Icon(Icons.check,size: 28.0),
                     ),
                   )
                 ],
               ),
               const SizedBox(height: 20.0),
+              const CustomTextField(
+                hint: 'title',
+              ),
+              const SizedBox(height: 20.0),
+              const CustomTextField(
+                hint: 'content',
+                maxline: 7,
+              ),
             ],
           ),
         ),
