@@ -7,8 +7,13 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
+        hintText: "title",
         border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(16.0),
+          borderRadius: BorderRadius.circular(16.0)
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderSide: const BorderSide(color: Colors.white),
+          borderRadius: BorderRadius.circular(16.0)
         )
       ),
     );
