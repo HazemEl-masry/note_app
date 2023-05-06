@@ -2,6 +2,8 @@
 
 Notes App
 
+Flutter and Hive .
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
